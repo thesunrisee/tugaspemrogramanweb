@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dashboard | SITTA</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="dashboard">
+    <nav>
+      <a href="stok.html">Informasi Bahan Ajar</a>
+      <a href="tracking.html">Tracking Pengiriman</a>
+      <div class="dropdown">
+        <a href="#">Laporan &#9662;</a>
+        <div class="dropdown-content">
+          <a href="#" data-soon="Monitoring Progress DO Bahan Ajar"
+            >Monitoring Progress DO Bahan Ajar</a
+          >
+          <a href="#" data-soon="Rekap Bahan Ajar">Rekap Bahan Ajar</a>
+        </div>
+      </div>
+      <a href="#" data-soon="Histori Transaksi Bahan Ajar"
+        >Histori Transaksi Bahan Ajar</a
+      >
+      <span class="spacer"></span><a href="#" id="logout">Keluar</a>
+    </nav>
+    <main>
+      <section class="card">
+        <h1>Dashboard Aplikasi SITTA</h1>
+        <h2 id="greeting"></h2>
+        <p>Pilih menu di atas untuk mengelola dan memantau bahan ajar.</p>
+      </section>
+    </main>
+    <footer>SITTA Praktik &copy; Universitas Terbuka</footer>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login | SITTA</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="login">
+    <div class="login-wrap">
+      <div class="card login-card">
+        <h1>Selamat Datang</h1>
+        <form id="formLogin" novalidate>
+          <label for="email">Email</label
+          ><input id="email" type="email" placeholder="Email" />
+          <label for="password">Password</label
+          ><input id="password" type="password" placeholder="Password" />
+          <div class="right">
+            <button type="button" class="link" id="btnLupa">
+              Lupa password ?
+            </button>
+          </div>
+          <div class="error" id="loginError"></div>
+          <button class="btn full" type="submit">Login</button>
+        </form>
+        <div class="center">
+          <button type="button" class="link" id="btnDaftar">
+            Belum punya akun? Daftar
+          </button>
+        </div>
+        <p class="center" style="font-size: 12px; color: #777">
+          Demo: mahasiswa@ecampus.ut.ac.id / ut12345
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="modalLupa">
+      <div class="modal-box">
+        <span class="close" data-close="modalLupa">&times;</span>
+        <h2>Lupa Password</h2>
+        <form id="formLupa">
+          <label for="emailLupa">Email terdaftar</label
+          ><input id="emailLupa" type="email" required /><button
+            class="btn full"
+            type="submit"
+          >
+            Kirim Tautan
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="modalDaftar">
+      <div class="modal-box">
+        <span class="close" data-close="modalDaftar">&times;</span>
+        <h2>Daftar</h2>
+        <form id="formDaftar">
+          <label for="namaDaftar">Nama</label
+          ><input id="namaDaftar" required /><label for="emailDaftar"
+            >Email</label
+          ><input id="emailDaftar" type="email" required />
+          <label for="passDaftar">Password</label
+          ><input id="passDaftar" type="password" required /><button
+            class="btn full"
+            type="submit"
+          >
+            Daftar
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer>SITTA Praktik &copy; Universitas Terbuka</footer>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

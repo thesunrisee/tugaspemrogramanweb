@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Stok | SITTA</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="stok">
+    <nav>
+      <a href="stok.html">Informasi Bahan Ajar</a>
+      <a href="tracking.html">Tracking Pengiriman</a>
+      <div class="dropdown">
+        <a href="#">Laporan &#9662;</a>
+        <div class="dropdown-content">
+          <a href="#" data-soon="Monitoring Progress DO Bahan Ajar"
+            >Monitoring Progress DO Bahan Ajar</a
+          >
+          <a href="#" data-soon="Rekap Bahan Ajar">Rekap Bahan Ajar</a>
+        </div>
+      </div>
+      <a href="#" data-soon="Histori Transaksi Bahan Ajar"
+        >Histori Transaksi Bahan Ajar</a
+      >
+      <span class="spacer"></span><a href="#" id="logout">Keluar</a>
+    </nav>
+    <main>
+      <section class="card">
+        <h1>Informasi Stok Bahan Ajar</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Kode Lokasi</th>
+              <th>Kode Barang</th>
+              <th>Nama Barang</th>
+              <th>Jenis</th>
+              <th>Edisi</th>
+              <th>Stok</th>
+            </tr>
+          </thead>
+          <tbody id="isiStok"></tbody>
+        </table>
+        <h2 style="margin-top: 24px">Tambah Stok Baru</h2>
+        <form id="formStok">
+          <div class="form-grid">
+            <div>
+              <label for="kLokasi">Kode Lokasi</label><input id="kLokasi" />
+            </div>
+            <div>
+              <label for="kBarang">Kode Barang</label><input id="kBarang" />
+            </div>
+            <div>
+              <label for="nBarang">Nama Barang</label><input id="nBarang" />
+            </div>
+            <div>
+              <label for="jBarang">Jenis</label
+              ><select id="jBarang">
+                <option>BMP</option>
+                <option>Modul</option>
+                <option>Buku Ajar</option>
+              </select>
+            </div>
+            <div>
+              <label for="edisi">Edisi</label
+              ><input id="edisi" type="number" min="1" />
+            </div>
+            <div>
+              <label for="stok">Stok</label
+              ><input id="stok" type="number" min="0" />
+            </div>
+          </div>
+          <button class="btn" type="submit">Tambah</button>
+        </form>
+      </section>
+    </main>
+    <footer>SITTA Praktik &copy; Universitas Terbuka</footer>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
